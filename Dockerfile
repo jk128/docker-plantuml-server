@@ -1,7 +1,7 @@
-# docker build -t neam/plantuml-server .
+# docker build -t jk128/plantuml-server .
 
 FROM tomcat:8.0
-MAINTAINER Fredrik Wollsén <fredrik@neam.se>
+MAINTAINER Janusz Korczak <januszkorczak128@gmail.com>
 
 # Remove existing wars
 RUN rm -r /usr/local/tomcat/webapps/*
@@ -16,7 +16,8 @@ RUN \
   rm -rf /var/cache/apt/*
 
 # Install plantuml
-RUN wget http://sourceforge.net/projects/plantuml/files/plantuml.war/download -O /usr/local/tomcat/webapps/ROOT.war
+#RUN wget http://sourceforge.net/projects/plantuml/files/plantuml.war/download -O /usr/local/tomcat/webapps/ROOT.war
+COPY war/plantuml.war /usr/local/tomcat/webapps/ROOT.war
 
 # Prevent startup taking minutes (http://wiki.apache.org/tomcat/HowTo/FasterStartUp, http://stackoverflow.com/questions/26431922/tomcat7-starts-too-late-on-ubuntu-14-04-x64-digitalocean)
 ENV JAVA_PATH /usr/lib/jvm/java-7-openjdk-amd64
