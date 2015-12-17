@@ -8,7 +8,7 @@ Repository with source code of a midified servlet:
 
 https://github.com/jk128/plantuml-server
 
-~Remark: WAR was made from branch universal-post-servlet~
+***Remark: WAR was made from branch universal-post-servlet***
 
 ## Usage
 
