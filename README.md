@@ -4,7 +4,7 @@ This is modified version of plantuml-servlet with additional functionality
 
 made from a fork of orginal plantuml-servlet (https://github.com/plantuml/plantuml-server).
 
-Repository with source code of a midified servlet:
+Repository with source code of a modified servlet:
 
 https://github.com/jk128/plantuml-server
 
