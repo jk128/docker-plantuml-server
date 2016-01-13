@@ -3,6 +3,8 @@
 FROM tomcat:8.0
 MAINTAINER Janusz Korczak <januszkorczak128@gmail.com>
 
+EXPOSE 8080
+
 # Remove existing wars
 RUN rm -r /usr/local/tomcat/webapps/*
 
